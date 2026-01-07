@@ -1,0 +1,81 @@
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+height:100vh;
+overflow:hidden;
+}
+
+/* BACKGROUND SLIDER */
+.bg-slider{
+position:fixed;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+animation:slidebg 25s infinite;
+filter:brightness(0.4);
+z-index:-1;
+}
+
+@keyframes slidebg{
+0%{background-image:url("https://images.unsplash.com/featured/?city,road")}
+20%{background-image:url("https://images.unsplash.com/featured/?water,pipe")}
+40%{background-image:url("https://images.unsplash.com/featured/?electricity")}
+60%{background-image:url("https://images.unsplash.com/featured/?hospital")}
+80%{background-image:url("https://images.unsplash.com/featured/?school")}
+100%{background-image:url("https://images.unsplash.com/featured/?garbage")}
+}
+
+/* LOGIN / REGISTER CARD */
+.login-box{
+width:360px;
+background:rgba(0,0,0,0.7);
+color:white;
+padding:35px;
+border-radius:20px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+box-shadow:0 0 30px rgba(13, 175, 175, 0.3);
+text-align:center;
+}
+
+.login-box h2{
+color:#41d8e9;
+margin-bottom:10px;
+}
+
+.login-box p{
+font-size:14px;
+margin-bottom:20px;
+opacity:0.9;
+}
+
+.login-box input{
+width:92%;
+padding:12px;
+margin:8px 0;
+border:none;
+border-radius:8px;
+}
+
+.login-box button{
+width:95%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+background:linear-gradient(45deg,#39bbc7,#00ff9d);
+font-weight:bold;
+cursor:pointer;
+}
+
+.login-box button:hover{
+opacity:0.9;
+}
+
+.login-box a{
+color:#729c91;
+text-decoration:none;
+}
