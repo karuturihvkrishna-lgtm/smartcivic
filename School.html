@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SchoolIssue Reporting</title>
+<link rel="stylesheet" href="Water.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="report-container">
+
+    <h1>🏫 School Problem Reporting</h1>
+    <p>Help your city by reporting School issues instantly.</p>
+
+    <form>
+
+        <label>Problem Title</label>
+        <input type="text" placeholder="Ex:" required>
+
+        <label>Problem Description</label>
+        <textarea placeholder="Describe the issue in detail..." required></textarea>
+
+        <label>Upload Photo / Video</label>
+        <input type="file" accept="image/*,video/*" capture="environment">
+
+        <label>Problem Location</label>
+        <input type="text" id="location" placeholder="Tap 'Get Location'">
+
+        <button type="button" onclick="getLocation()">📍 Get My Location</button>
+
+        <button type="submit" class="submit-btn">Submit Complaint</button>
+
+    </form>
+</div>
+
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(pos){
+            document.getElementById("location").value =
+            pos.coords.latitude + ", " + pos.coords.longitude;
+        });
+    } else {
+        alert("Location not supported");
+    }
+}
+</script>
+
+</body>
+</html>
