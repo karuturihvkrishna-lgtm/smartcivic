@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    font-family:'Segoe UI';
+    background:linear-gradient(135deg,#466e76,#305258,#2e4e55);
+    color:rgb(255, 255, 255);
+}
+
+/* Header */
+header{
+    display:flex;
+    align-items:center;
+    padding:15px 30px;
+    background:rgba(0,0,0,0.4);
+    box-shadow:0 4px 20px #00e5ff;
+}
+
+header h1{
+    margin:auto;
+    color:#00e5ff;
+    letter-spacing:1px;
+}
+
+/* Profile Button */
+.profile-btn{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+
+.profile-btn img{
+    width:42px;
+    margin-right:10px;
+}
+
+/* Search */
+.search-area{
+    display:flex;
+    justify-content:center;
+    margin:25px;
+}
+
+.search-area input{
+    width:60%;
+    padding:14px;
+    border-radius:5px;
+    border:none;
+    font-size:16px;
+}
+
+/* Glass Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:40px;
+}
+
+.glass{
+    background:rgba(0, 200, 255, 0.25);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    text-align:center;
+    padding:50px 20px;
+    font-size:18px;
+    box-shadow:0 0 25px #28dcf0;
+    transition:.3s;
+}
+
+.glass:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 40px #00ffff;
+}
+
+/* Popup */
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+    display:none;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup-box{
+    background:rgba(0,0,0,0.9);
+    padding:30px;
+    width:300px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 30px #00e5ff;
+    position:relative;
+}
+
+.popup-box input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:none;
+}
+
+.popup-box button{
+    width:100%;
+    padding:12px;
+    background:#00e5ff;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.close{
+    position:absolute;
+    top:10px;
+    right:15px;
+    cursor:pointer;
+}
