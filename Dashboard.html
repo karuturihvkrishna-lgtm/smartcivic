@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Public Reporting</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<header>
+    <div class="profile-btn" onclick="openProfile()">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        <span>Profile</span>
+    </div>
+    <h1>SMART PUBLIC REPORTING DASHBOARD</h1>
+</header>
+
+<div class="search-area">
+    <input type="text" placeholder="Search public issues...">
+</div>
+
+<section class="cards">
+    <div class="glass"><a href="Water.html">Water</a></div>
+    <div class="glass"><a href="Electricity.html">Electricity</a></div>
+    <div class="glass"><a href="RoadDamage.html">Road Damage</a></div>
+    <div class="glass"><a href="Hospital.html">Hospital</a></div>
+    <div class="glass"><a href="School.html">School</a></div>
+    <div class="glass"><a href="Garbage.html">Garbage</a></div>
+    <div class="glass"><a href="Drainage.html">Drainage</a></div>
+    <div class="glass"><a href="OtherIssues.html">Other Issues</a></div>
+</section>
+
+<!-- Profile Popup -->
+<div class="popup" id="profilePopup">
+    <div class="popup-box">
+        <h2>Edit Profile</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="New Password">
+        <button>Update</button>
+        <span class="close" onclick="closeProfile()">✖</span>
+    </div>
+</div>
+
+<script>
+function openProfile(){
+    document.getElementById("profilePopup").style.display="flex";
+}
+function closeProfile(){
+    document.getElementById("profilePopup").style.display="none";
+}
+</script>
+
+</body>
+</html>
